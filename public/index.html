@@ -1,5 +1,27 @@
 <html>
-<head></head>
+<head>
+    !-- Optional: Required for resizing panel height -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RickStrahl/jquery-resizable@0.32/dist/jquery-resizable.min.js"></script>
+     
+    <!-- Optional: Required for logging arrays and objects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/native-promise-only/0.8.1/npo.js"></script> <!-- Optional: A polyfill for native ES6 Promises (Not required for modern browsers) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.26.2/jsoneditor.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.26.2/jsoneditor-minimalist.min.js"></script>
+     
+    <!-- Optional: Required for logging DOM elements with syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js" data-manual></script>
+     
+    <!-- Required: Code for console-panel -->
+    <link rel="stylesheet" href="vendor/console-panel/console-panel.css" />
+    <script src="vendor/console-panel/console-panel.js"></script>
+    <script>
+        consolePanel.enable({
+            position: 'bottom-left'
+        });
+    </script>     
+</head>
 <body>
     <a-scene environment="preset: contact">
         <a-assets>
@@ -22,7 +44,7 @@
                         position="0 0 0"
                         scale=".025 0 .025"
                         shader="flat"
-                        sound__lightsaber-on="on: lightsaber-on; src: #sound-lightsaber-on"
+                        sound__lightsaber-on="on: disabled-lightsaber-on; src: #sound-lightsaber-on"
                     ></a-cylinder>
                 </a-entity>
             </a-entity>
