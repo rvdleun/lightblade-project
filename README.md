@@ -1,5 +1,7 @@
-# rvdleun-aframe-starter-kit
-This is a starter kit that I frequently use when building new AFrame projects.
+# Lightblade-Project
+This is a WebVR project where I'm just goofing around, building something with a lightblade in it.
+
+It's the basis for a Twitch Stream(https://www.twitch.tv/rvdleun) where I'm working on this live while having a headset on at all times, using virtc.app.
 
 ## Directory structure
 
