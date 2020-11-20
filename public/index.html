@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+    <a-scene environment="preset: contact">
+        <a-assets>
+            <audio id="sound-lightsaber-on" src="/assets/SaberOn.mp3"></sound>
+        </a-assets>
+        <a-entity id="player">
+            <a-entity
+            lightsaber-controls
+            tracked-controls="hand: right"
+            >
+                <a-entity
+                    rotation="-55 0 0"
+                >
+                    <a-cylinder class="handle" scale=".03 .2 .03"></a-cylinder>
+                    <a-cylinder
+                        lightsaber-blade="active: false"
+                        class="blade"
+                        color="lightgreen"
+                        light="color: green; intensity: 1; type: point"
+                        position="0 0 0"
+                        scale=".025 0 .025"
+                        shader="flat"
+                        sound__lightsaber-on="on: lightsaber-on; src: #sound-lightsaber-on"
+                    ></a-cylinder>
+                </a-entity>
+            </a-entity>
+        </a-entity>
+</a-scene>
+</body>
+</html>
