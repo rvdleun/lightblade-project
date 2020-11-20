@@ -7,7 +7,7 @@ module.exports = {
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
         hot: true,
-        public: 'rvdleun.ngrok.io',
+        // public: 'rvdleun.ngrok.io',
         port: 8000,
         watchContentBase: true,
     },
